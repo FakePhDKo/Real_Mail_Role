@@ -72,28 +72,20 @@ ansible-playbook -i inventory mail_config.yml
 ## 4. 📁 역할 구조
 
 ```
-PROJECT
-├── .vscode/
-├── mail_server/
-│   ├── host_vars/
-│   │   ├── ansible1.example1.com.yml
-│   │   └── ansible2.example2.com.yml
-│   └── roles/mail_server/
-│       ├── defaults/
-│       ├── files/
-│       ├── handlers/
-│       │   └── main.yml
-│       ├── meta/
-│       ├── tasks/
-│       │   └── main.yml
-│       ├── templates/
-│       │   ├── hosts.j2
-│       │   └── main.cf.j2
-│       ├── tests/
-│       └── vars/
-│           └── main.yml
-├── README.md
-├── ansible.cfg
-├── inventory
-└── mail_config.yml
+
+
+├── defaults/
+├── files/
+├── handlers/
+│   └── main.yml
+├── meta/
+├── tasks/
+│   └── main.yml
+├── templates/
+│   ├── hosts.j2
+│   └── main.cf.j2
+├── tests/
+└── vars/
+└── main.yml
+└── README.md
 ```
